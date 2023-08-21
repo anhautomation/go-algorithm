@@ -1,6 +1,6 @@
 package algorithms
 
-func FirstNonRepeatedChar(s string) byte {
+func FirstNonRepeatedChar(s string) (byte) {
     charFrequency := make(map[byte]int)
     for i := 0; i < len(s); i++ {
         charFrequency[s[i]]++
