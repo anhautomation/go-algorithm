@@ -37,6 +37,8 @@ func main() {
 	n := 10
 	fmt.Println("Fibonacci of ", n," is ", algorithms.Fibonacci(n))
 
+	fmt.Println("Fibonacci of ", n," is ", algorithms.FibonacciRecursion(n))
+
 	fmt.Println("factorial of 5 is ", algorithms.Factorial(5))
 
 	solutions := algorithms.SolveNQueens(4)
@@ -46,5 +48,13 @@ func main() {
 		}
 		fmt.Println()
 	}
+
+	input := "programming"
+    result := algorithms.FirstNonRepeatedChar(input)
+    if result != 0 {
+        fmt.Printf("The first non-repeated character in '%s' is: %c\n", input, result)
+    } else {
+        fmt.Printf("No non-repeated character found in the input string.")
+    }
 	
 }
